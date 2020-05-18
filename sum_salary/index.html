@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--  meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto|Roboto+Slab&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="a.js">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+		<style>
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="table mt-5">
+				<table>
+					<tr>
+						<th>Month</th>
+						<th>Nhan vien 1</th>
+						<th>Nhan vien 2</th>
+						<th>Nhan vien 3</th>
+					</tr>
+					<tr>
+						<td>Thang 1</td>
+						<td>
+							<input id="o1" class="nv1" value="100" type="text"   >
+						</td>
+						<td>
+							<input class="nv2" value="500" type="text"   >
+						</td>
+						<td>
+							<input class="nv3" value="700" type="text"   >
+						</td>
+					</tr>
+					<tr>
+						<td>Thang 2</td>
+						<td>
+							<input id="o2" class="nv1" value="150" type="text"   >
+						</td>
+						<td>
+							<input class="nv2" value="600" type="text"   >
+						</td>
+						<td>
+							<input class="nv3" value="750" type="text"   >
+						</td>
+					</tr>
+					<tr>
+						<td>Thang 3</td>
+						<td>
+							<input id="o3" class="nv1" value="200" type="text"   >
+						</td>
+						<td>
+							<input class="nv2" value="500" type="text"   >
+						</td>
+						<td>
+							<input class="nv3" value="600" type="text"   >
+						</td>
+					</tr>
+					<tr id="thuong">
+						<td>Tien thuong</td>
+						<td>
+							<input type="text" class="nv1 thuong1">
+						</td>
+						<td>
+							<input type="text" class=" nv2 thuong2">
+						</td>
+						<td>
+							<input type="text" class=" nv3 thuong3">
+						</td>
+						<td><div  id="notethuong"></div></td>
+					</tr>
+					<tr class=" a1 ">
+						<td>Tien luong</td>
+						<td>
+							<input class=" a luongnv1" type="text"   >
+						</td>
+						<td>
+							<input class="a luongnv2" type="text"   >
+						</td>
+						<td>
+							<input class="a luongnv3" type="text"   >
+						</td>
+						<td>
+							<div id="loiluong"></div>
+						</td>
+					</tr>
+					<tr>
+						<td>Thue TN</td>
+						<td>
+							<input   class="b thuenv1" type="text"   >
+						</td>
+						<td>
+							<input class="b thuenv2" type="text"   >
+						</td>
+						<td>
+							<input  class="b thuenv3" type="text"   >
+						</td>
+						<td><div id="loithue"></div></td>
+					</tr>
+					<tr class="tong">
+						<td>Tong luong</td>
+						<td>
+							<input class="c tongnv1" type="text"   >
+						</td>
+						<td>
+							<input class="c tongnv2" type="text"   >
+						</td>
+						<td>
+							<input class="c tongnv3" type="text"   >
+						</td>
+						<td>
+							<input  type="text" class="tiencongty">
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><div class="thue"></div></td>
+						<td> <div class="thue"></div></td>
+						<td><div class="thue"></div></td>
+					</tr>
+				</table>
+				<div class="mt-4">
+					<button  class="tienthuong btn btn-primary">Tien thuong</button>
+					<button onchange ="thaydoi()" class="ketqua btn btn-primary">Luong chua thue</button>
+					<button class="luong btn btn-primary">Luong sau thue</button>
+				</div>
+			</div>
+		</div>
+		<button onclick="add()">Try it</button>
+		<p id="text"></p>
+		<script type="text/javascript" src="a.js"></script>
+		<script type="text/javascript" src="b.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>

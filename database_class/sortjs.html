@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var class1 =[
+	{
+  	id:0,
+     name: '1a',
+     teacher : 0
+  },
+  {
+  	id:1,
+  	name: '2a',
+     teacher :1
+  },
+  {
+  id:2,
+  name: '3a',
+     teacher : 2
+  }
+];
+var teacher = [
+		{
+    id:0,
+     name:'thu',age:44
+     },
+     {
+     id:1,
+     name:'gaea',age:46
+     },
+     {
+     id:2,
+     name:'thuuong',age:54
+     }
+];
+var student = [
+     {id:0, name: "thinh" , age:12,class:0},
+     {id:1,name:'an' , age :12,class:0},
+     {id:2,name: "ngoc" , age:14,class:1},
+     {id:3,name:'tu' , age :14,class:1},
+     {id:5,name: "tring" , age:13,class:2},
+     {id:6,name:'anh' , age :13,class:2}
+];
+// function getStudent(className){
+// 	var class1a = class1.find(function(x){
+//   	return x.name== className;
+//   });
+//   var studentInclass = student.filter(function(student){
+//   	return student.class==class1a.id;
+//   });
+//   return studentInclass;
+// }
+// var a = getStudent('1a');
+// console.log(a);
+
+function sorted(student){
+		var sortted= student.sort(function(a,b){
+    if(a.name<b.name){return -1};
+    })
+    return sortted;
+}
+var c= sorted(student);
+console.log(c);
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
